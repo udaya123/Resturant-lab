@@ -29,7 +29,7 @@ option1.addEventListener('change', function(){ //this is the outer function
 
 option2.addEventListener('change', function(){ //this is the outer function
 	option2Selected = option2.options[option2.selectedIndex].text;
-	redirect(); //this calls the function known as redirect
+	redirect1(); //this calls the function known as redirect
 });
 
 /*
@@ -41,9 +41,25 @@ HINT: you need to write several if statements for each possible text combination
 */
 
 function redirect() {
-	if (//fill in your if statement here **ADD CODE HERE**
-		) {
-		location.href="www...";
+	if (option1Selected =="BREAKFAST") {//fill in your if statement here **ADD CODE HERE** {
+		window.location = "http://www.google.com";
 	}
+  else if (option1Selected == "LUNCH") {
+    window.location = "http://www.yahoo.com";
+  }
+  else {
+    window.location = "http://www.ebay.com";
+}
 }
 
+function redirect1() {
+  if (option2Selected == "BOSTON") {
+    window.location = "http://www.facebook.com";
+  }
+  else if (option2Selected == "CHICAGO") {
+    window.location = "http://www.ebay.com";
+  }
+  else {
+    window.location = "http://www.sears.com";
+  }
+}
